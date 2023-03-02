@@ -1,0 +1,20 @@
+.style-directive12-container{
+    #style12 {
+        color: rgb(150, 228, 228);
+    };
+    // .style14[changeColor12] {
+    //     font-size:large;
+    //     border: 1px solid black;
+    // }
+    .style14[changeColor12] {
+        font-size:large;
+        border: 1px solid black;
+        width: fit-content;
+    }
+    .style14 {
+        padding: 10px;
+        font-size:smaller;
+        border: 2px dotted red;
+        width: fit-content;
+    }
+}
