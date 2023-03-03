@@ -1,4 +1,4 @@
-import { FuseNavigation23 } from "src/@fuse23/types/fuse-navigation";
+import { FuseNavigation23 } from "projects/app1/src/@fuse23/types/fuse-navigation";
 
 export const navigation: any[] = [
     {
