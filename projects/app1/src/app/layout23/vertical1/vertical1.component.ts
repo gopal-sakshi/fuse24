@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FuseConfigService } from 'projects/app1/src/@fuse23/fuse-config.service';
 
 @Component({
   selector: 'app-vertical1',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./vertical1.component.scss']
 })
 export class Vertical1Component {
+  
+  constructor(private fuseConfigService: FuseConfigService) {}
+
+  ngOnInit() {
+    this.fuseConfigService.
+  }
 
 }

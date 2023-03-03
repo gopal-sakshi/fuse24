@@ -9,6 +9,8 @@ import { Enlarge12Directive } from './directives/enlarge12.directive';
 import { ChangeColor12Directive } from './directives/change-color12.directive';
 import { Vertical1Component } from './layout23/vertical1/vertical1.component';
 import { Vertical2Component } from './layout23/vertical2/vertical2.component';
+import { fuseConfig } from './fuse-config';
+import { FuseModule } from '../@fuse23/fuse23.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { Vertical2Component } from './layout23/vertical2/vertical2.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FuseModule.forRoot(fuseConfig),
   ],
   providers: [],
   bootstrap: [AppComponent]
