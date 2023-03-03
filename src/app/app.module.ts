@@ -7,6 +7,8 @@ import { StyleDirective12Component } from './components/style-directive12/style-
 import { HomeComponent } from './components/home/home.component';
 import { Enlarge12Directive } from './directives/enlarge12.directive';
 import { ChangeColor12Directive } from './directives/change-color12.directive';
+import { Vertical1Component } from './layout23/vertical1/vertical1.component';
+import { Vertical2Component } from './layout23/vertical2/vertical2.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { ChangeColor12Directive } from './directives/change-color12.directive';
     AppComponent,
     HomeComponent,
     StyleDirective12Component,
+    Vertical1Component,
+    Vertical2Component,
 
     // Directives
     Enlarge12Directive,
