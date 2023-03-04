@@ -1,0 +1,14 @@
+<div class="navbar-header" [ngClass]="fuseConfig.layout.navbar.secondaryBackground">
+    <div class="logo">
+        <img class="logo-icon" [src]="appConfig?.appLogoUrl">        
+    </div>
+    <button mat-icon-button class="toggle-sidebar-folded" (click)="toggleSidebarFolded()">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <button mat-icon-button class="toggle-sidebar-opened" (click)="toggleSidebarOpened()">
+        <mat-icon>arrow_back</mat-icon>
+    </button>
+</div>
+<div class="navbar-content" [ngClass]="fuseConfig.layout.navbar.primaryBackground">
+    <app-navigation44 layout="vertical"></app-navigation44>
+</div>

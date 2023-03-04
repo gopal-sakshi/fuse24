@@ -1,8 +1,12 @@
 <div class="home-container">
     <div class="user-buttons">
         <button (click)="styleDirective12=!styleDirective12">style-directive12</button>
+        <button (click)="showLayout=!showLayout">showLayout</button>        
     </div>
     <div class="child-components">
         <app-style-directive12 *ngIf="styleDirective12"></app-style-directive12>
     </div>
+    <div class="child-components">
+        <app-vertical1 *ngIf="showLayout"></app-vertical1>
+    </div>    
 </div>

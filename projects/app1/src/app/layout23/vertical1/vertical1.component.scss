@@ -1,0 +1,71 @@
+.reset-bootstrap-container {
+  max-width: none;
+  padding-left: unset;
+  padding-right: unset;
+  margin-left: unset;
+  margin-right: unset;
+}
+
+vertical-layout-1 {
+  display: flex;
+  flex: 1 1 auto;
+  width: 100%;
+  height: 100%;
+
+  #main {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    min-width: 0;
+
+    // Container 1
+    > .container {
+      @extend .reset-bootstrap-container;
+      position: relative;
+      display: flex;
+      flex: 1 1 0%;
+      width: 100%;
+      min-height: 0;
+      min-width: 0;
+
+      // Container 2
+      > .container {
+        @extend .reset-bootstrap-container;
+        position: relative;
+        display: flex;
+        flex: 1 1 0%;
+        flex-direction: column;
+        min-width: 0;
+
+        // Container 3 (Scrollable)
+        > .container {
+          @extend .reset-bootstrap-container;
+          position: relative;
+          display: flex;
+          flex: 1 1 0%;
+          flex-direction: column;
+          overflow-x: hidden;
+          overflow-y: auto !important;
+          // -webkit-overflow-scrolling: touch;
+
+          // Content component
+          content {
+            &.inner-scroll {
+              flex: 1 1 0%;
+              min-height: 0;
+
+              > *:not(router-outlet) {
+                flex: 1 1 0%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

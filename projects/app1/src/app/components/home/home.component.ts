@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  styleDirective12:boolean = true;
+  styleDirective12:boolean = false;
+  showLayout:boolean = false;
 }
