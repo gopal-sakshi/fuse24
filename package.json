@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start:app1": "ng serve --port 9879 --project app1",
-    "start:app2": "ng serve --port 9879 --project app2",
+    "start:app2": "ng serve --port 9878 --project app2",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
